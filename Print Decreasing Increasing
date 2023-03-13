@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+void Print_Decreasing_Increasing(int n){
+    if(n == 0){
+        return;
+    }
+    cout<<n<<" ";
+    Print_Decreasing_Increasing(n-1);
+    cout<<n<<" ";
+}
+int main(){
+    int n;
+    cin>>n;
+    Print_Decreasing_Increasing(n);
+    return 0;
+}
